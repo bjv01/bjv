@@ -6,7 +6,7 @@ type: landing
 
 design:
   # Default section spacing
-  spacing: '6rem'
+  spacing: '0'
 
 sections:
   - block: resume-biography-3
@@ -31,7 +31,7 @@ sections:
         shape: circle # Options: circle (default), square, rounded
       # Reduce bottom spacing
       spacing:
-        padding: ['6rem', 0, '2rem', 0]
+        padding: [0, 0, 0, 0]
   # - block: collection
   #   id: papers
   #   content:
