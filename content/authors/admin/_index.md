@@ -70,103 +70,114 @@ education:
     date_start: 2021-09-01
     date_end: 2023-11-17
     summary: |
-      GPA: 4.0/4.0
+      First-Class Honours (Graduated with distinction)
 
-      Specialized in machine learning and robotics.
-  - area: BA Sociology
+      Supervisor: Dr. Gian Marco Campagnolo
+
+      Thesis: A social data science metric for machine learning interpretability
+  - area: BA Sociology with Development
     institution: Pontifical Catholic University of Ecuador
     icon: ""
-    date_start: 2009-09-01
-    date_end: 2013-05-31
+    date_start: 2014-06-01
+    date_end: 2019-06-30
     summary: |
-      GPA: 3.9/4.0
+      Graduated with honors (10/10)
 
-      Minored in Mathematics. President of AI Club.
+      President of the Student Federation (2018) and representative to Superior Council (2017)
 
 work:
-  - position: Senior AI Research Scientist
-    company_name: Meta AI
-    company_url: 'https://ai.meta.com/'
+  - position: General Information Coordinator
+    company_name: Vicedeanery for Academic Affairs and Student Services - Pontifical Catholic University of Ecuador
+    company_url: 'https://www.puce.edu.ec/'
     icon: ''
-    date_start: 2020-01-01
+    date_start: 2019-09-01
     date_end: ''
     summary: |2-
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models. 50+ citations in 3 years.
-  - position: AI Research Intern
-    company_name: OpenAI
-    company_url: 'https://openai.com/'
+      Provide strategic advice to the Vicedeanery for Academic Affairs and Student Services, coordinate the execution of high-relevance institutional projects, and supervise key activities related to Teaching and Student management across 7 campuses (Quito, Amazonas, Ambato, Esmeraldas, Ibarra, Manabí, and Santo Domingo).
+
+      My interdisciplinary background in social sciences, combined with my technical expertise in information management, AI application development, and data science are key factors in my contribution to the institution.
+
+      Previously held roles as data analyst (2019-2020), scholarships and financial aid specialist (2020-2022), and coordinator of the General Direction of Students (2022-2024).
+  - position: Data Intelligence Associate Consultant
+    company_name: Diozen Integral Consulting by Results
+    company_url: ''
     icon: ''
-    date_start: 2019-06-01
-    date_end: 2019-12-31
+    date_start: 2019-02-01
+    date_end: 2019-08-31
     summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+      Implemented multidisciplinary projects related to business management from a data analysis and visualization perspective. Participated in projects with companies in the Insurance sector (Tecniseguros), Health sector (InstaSalud, PUCESalud), and Social Entrepreneurship projects (U.S. Changemakers, funded by the U.S. Embassy in Ecuador).
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
   - name: Technical Skills
     items:
-      - name: Python & PyTorch
-        description: ''
-        percent: 95
+      - name: Python & R
+        description: 'Data science, ML, statistical analysis'
+        percent: 90
         icon: code-bracket
-      - name: Machine Learning
-        description: ''
-        percent: 100
+      - name: Machine Learning & AI
+        description: 'Explainability, interpretability, social evaluation'
+        percent: 90
         icon: chart-bar
-      - name: Cloud Computing (AWS/GCP)
-        description: ''
+      - name: Data Visualization
+        description: 'Interactive dashboards and business intelligence'
         percent: 85
-        icon: cloud
-  - name: Hobbies
+        icon: chart-bar
+      - name: Social Network Analysis
+        description: 'Complex network analysis and visualization'
+        percent: 80
+        icon: chart-bar
+  - name: Research & Leadership
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking in the Rockies
-        description: ''
-        percent: 80
-        icon: person-simple-walk
-      - name: Building Custom PCs
-        description: ''
-        percent: 90
-        icon: cpu-chip
-      - name: Sci-Fi Reading
-        description: ''
-        percent: 70
+      - name: Interdisciplinary Research
+        description: 'Social science + data science'
+        percent: 95
         icon: book-open
+      - name: Project Management
+        description: 'Strategic planning and execution'
+        percent: 90
+        icon: briefcase
+      - name: Student Leadership
+        description: 'Federation president and coordinator'
+        percent: 85
+        icon: user-group
 
 languages:
-  - name: English
-    percent: 100
   - name: Spanish
-    percent: 50
+    percent: 100
+  - name: English
+    percent: 95
+    description: 'IELTS C1 level (proficient)'
 
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: Best Paper Award
-    url: https://neurips.cc/
-    date: '2022-12-01'
-    awarder: NeurIPS
-    icon: hero/trophy
+  - title: Fondo Publícalo
+    url: https://www.puce.edu.ec/
+    date: '2020-06-01'
+    awarder: Pontifical Catholic University of Ecuador
+    icon: hero/document-text
     summary: |
-      Awarded for groundbreaking work on efficient training of large models.
-  - title: AI Innovation Grant
-    url: https://www.nsf.gov/
-    date: '2021-06-15'
-    awarder: National Science Foundation
-    icon: hero/currency-dollar
-    summary: |
-      $500,000 grant for research in ethical AI development.
-  - title: Outstanding PhD Thesis
-    url: https://www.stanford.edu/
-    date: '2019-06-30'
-    awarder: Stanford University
+      Recognition promoting the publication of the dissertation thesis.
+  - title: Academic Merit Recognition
+    url: https://www.puce.edu.ec/
+    date: '2015-12-01'
+    awarder: Pontifical Catholic University of Ecuador
     icon: hero/academic-cap
     summary: |
-      Recognized for contributions to scaling laws in deep learning.
+      Awarded for academic excellence in the second semester of 2015.
+  - title: SNNA Scholarship
+    url: https://www.educacionsuperior.gob.ec/
+    date: '2014-06-01'
+    awarder: National Secretariat of Higher Education, Science, Technology and Innovation (Ecuador)
+    icon: hero/trophy
+    summary: |
+      Scholarship awarded for the score obtained in the ENES exam (Sierra Region - 2014).
 ---
 
 Bridging social science and technology to create AI with humanity in mind.
