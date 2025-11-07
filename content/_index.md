@@ -53,6 +53,9 @@ sections:
         exclude_featured: false
     design:
       view: citation
+      css_class: 'section-alternate'
+      spacing:
+        padding: ['3rem', 0, '3rem', 0]
   - block: resume-experience
     content:
       username: admin
@@ -66,30 +69,32 @@ sections:
       # Use full width with very minimal margins
       css_class: 'w-full px-2'
       spacing:
-        padding: ['1rem', 0, '1rem', 0]
+        padding: ['3rem', 0, '3rem', 0]
   - block: resume-skills
     content:
       title: Skills & Hobbies
       username: admin
     design:
       show_skill_percentage: false
+      css_class: 'section-alternate'
       css_style: 'font-size: 0.875rem;'
       spacing:
-        padding: ['1rem', 0, '1rem', 0]
+        padding: ['3rem', 0, '3rem', 0]
   - block: resume-awards
     content:
       title: Awards
       username: admin
     design:
       spacing:
-        padding: ['1rem', 0, '1rem', 0]
+        padding: ['2rem', 0, '2rem', 0]
   - block: resume-languages
     content:
       title: Languages
       username: admin
     design:
+      css_class: 'section-alternate'
       spacing:
-        padding: ['1rem', 0, '1rem', 0]
+        padding: ['2rem', 0, '2rem', 0]
   # - block: collection
   #   id: talks
   #   content:
