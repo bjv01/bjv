@@ -23,7 +23,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: 'I study what happens after human-AI interaction: when AI-assisted work flows to colleagues, patients, and decision-makers who weren''t present. I bridge AI, cognitive science, and social science to ensure AI augments not just individual users, but the broader human networks they serve.'
+role: 'I study what happens *after* human-AI interaction: when AI-assisted work flows to colleagues, patients, and decision-makers who weren''t present. I bridge AI, cognitive science, and social science to ensure AI augments not just individual users, but the broader human networks they serve.'
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
