@@ -11,121 +11,14 @@ design:
 sections:
   - block: resume-biography-3
     content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
       text: ''
-      # Show a call-to-action button under your biography? (optional)
-      # button:
-      #   text: Download CV
-      #   url: uploads/resume.pdf
       headings:
         about: ''
-        education: ''
-        interests: ''
     design:
-      # Apply a gradient background
-      css_class: hbx-bg-gradient
-      # Avatar customization
       avatar:
-        size: large # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
-        shape: circle # Options: circle (default), square, rounded
-      # Reduce bottom spacing
+        size: medium
+        shape: circle
       spacing:
-        padding: [0, 0, 0, 0]
-  # - block: collection
-  #   id: papers
-  #   content:
-  #     title: Featured Publications
-  #     filters:
-  #       folders:
-  #         - publications
-  #       featured_only: true
-  #   design:
-  #     view: article-grid
-  #     columns: 2
-  - block: collection
-    content:
-      title: Recent Publications
-      text: ''
-      filters:
-        folders:
-          - publications
-        exclude_featured: false
-    design:
-      view: citation
-  - block: resume-experience
-    content:
-      username: admin
-    design:
-      # Hugo date format
-      date_format: 'January 2006'
-      # Education or Experience section first?
-      is_education_first: true
-      # Display as two columns
-      columns: '2'
-      # Use full width with very minimal margins
-      css_class: 'w-full px-2'
-      spacing:
-        padding: ['1rem', 0, '1rem', 0]
-  - block: resume-awards
-    content:
-      title: Awards
-      username: admin
-    design:
-      spacing:
-        padding: ['1rem', 0, '1rem', 0]
-  - block: resume-skills
-    content:
-      title: Skills & Hobbies
-      username: admin
-    design:
-      show_skill_percentage: false
-      css_style: 'font-size: 0.875rem;'
-      spacing:
-        padding: ['1rem', 0, '1rem', 0]
-  - block: resume-languages
-    content:
-      title: Languages
-      username: admin
-    design:
-      spacing:
-        padding: ['1rem', 0, '1rem', 0]
-  # - block: collection
-  #   id: talks
-  #   content:
-  #     title: Recent & Upcoming Talks
-  #     filters:
-  #       folders:
-  #         - events
-  #   design:
-  #     view: card
-  # - block: collection
-  #   id: news
-  #   content:
-  #     title: Recent News
-  #     subtitle: ''
-  #     text: ''
-  #     # Page type to display. E.g. post, talk, publication...
-  #     page_type: blog
-  #     # Choose how many pages you would like to display (0 = all pages)
-  #     count: 5
-  #     # Filter on criteria
-  #     filters:
-  #       author: ''
-  #       category: ''
-  #       tag: ''
-  #       exclude_featured: false
-  #       exclude_future: false
-  #       exclude_past: false
-  #       publication_type: ''
-  #     # Choose how many pages you would like to offset by
-  #     offset: 0
-  #     # Page order: descending (desc) or ascending (asc) date.
-  #     order: desc
-  #   design:
-  #     # Choose a layout view
-  #     view: card
-  #     # Reduce spacing
-  #     spacing:
-  #       padding: [0, 0, 0, 0]
+        padding: ['0', 0, '0', 0]
 ---

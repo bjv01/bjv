@@ -3,10 +3,10 @@
 # Documentation: https://docs.hugoblox.com/
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-# Appearance
+# Appearance - Minimalist academic design
 appearance:
   mode: system
-  color: orange
+  color: zinc
 
 # SEO
 marketing:
@@ -32,17 +32,17 @@ header:
     enable: true
     block: 'navbar'
     fixed_to_top: true
-    show_search: true
+    show_search: false
     show_theme_chooser: true
     logo:
-      text: 'Bernardo Villegas Moreno'
+      text: '_me'
 
-# Site footer
+# Site footer - Clean and minimal
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Bernardo Villegas Moreno'
     license:
-      enable: true
+      enable: false
       allow_derivatives: false
       share_alike: true
       allow_commercial: false

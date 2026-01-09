@@ -3,14 +3,14 @@
 title: Bernardo Villegas Moreno
 
 # Name pronunciation (optional)
-name_pronunciation: 'he/him'
+name_pronunciation: ''
 
 # Full name (for SEO)
 first_name: Bernardo
 last_name: Villegas Moreno
 
 # Pronouns (optional)
-pronouns: he/him
+pronouns: ''
 
 # Status emoji
 status:
@@ -23,16 +23,18 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: PhD Student
+role: 'How does relying on AI change the way we interact? I bridge cognitive science, social science, and human-AI interaction to design trustworthy AI that works for teams—not just individuals.'
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: University of Cambridge – Center for Human Inspired AI
+  - name: Center for Human-Inspired AI · TRACE Lab · University of Cambridge
     url: https://chia.cam.ac.uk/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
+  - icon: hero/envelope
+    url: mailto:bjv30@cam.ac.uk
   - icon: brands/x
     url: https://twitter.com/Bernardo__VM
   - icon: brands/github
@@ -48,11 +50,13 @@ profiles:
     label: Download CV
 
 interests:
-  - Social Evaluation of AI
-  - Natural Language Processing
-  - Human Centered AI
-  - Explainable AI
-  - AI Ethics
+  - "AI:"
+  - Social Evaluation
+  - NLP
+  - Human-Centered
+  - Safety
+  - Ethics
+  - Cross-Cultural Effects
 
 education:
   - area: PhD Human-Inspired Artificial Intelligence
@@ -66,7 +70,7 @@ education:
     button:
       text: 'See my profile'
       url: 'https://www.chia.cam.ac.uk/team/bernardo-villegas-moreno'
-  - area: MSc Data Science, Technology & Innovation
+  - area: MSc Data Science
     institution: University of Edinburgh
     icon: ""
     date_start: 2021-09-01
@@ -75,7 +79,7 @@ education:
       First-Class Honours (Distinction)
       Supervisor: Dr. Gian Marco Campagnolo
       Thesis: A social data science metric for machine learning interpretability
-  - area: BA Sociology with a minor in Development
+  - area: BA Sociology
     institution: Pontifical Catholic University of Ecuador
     icon: ""
     date_start: 2014-06-01
@@ -185,7 +189,3 @@ awards:
     summary: |
       Scholarship awarded for the score obtained in the ENES exam (Sierra Region - 2014).
 ---
-
-I work at the intersection of AI research, social science, and tech development. My focus is twofold: measuring and understanding AI's social impacts, and developing technology that genuinely serves human needs and enhances human capabilities. Technology, and AI in particular, is shaping how societies develop. My work ensures these systems are designed with clarity about their impact on individuals and communities, creating solutions that are both technically robust and socially meaningful.
-
-Currently pursuing my PhD in Human-Inspired Artificial Intelligence at the [Center for Human-Inspired AI (CHIA)](https://www.chia.cam.ac.uk) at the University of Cambridge, part of the Trace Lab, supervised by [Dr. Umang Bhatt](https://umangsbhatt.github.io) and co-supervised by [Prof. Anna Korhonen](https://sites.google.com/site/annakorhonen/). I have a particular interest in the cognitive and social impacts of AI adoption and how culture shapes them, with current research focused on the externalities of human-AI interaction—tracking how AI use influences productivity, confidence, equity, and moral reasoning at scale. My background in Sociology (Pontifical Catholic University of Ecuador) and Data Science (University of Edinburgh) enables me to bridge the gap between disciplines, understanding social dynamics and human behavior, and then designing computational systems that respond to these realities.

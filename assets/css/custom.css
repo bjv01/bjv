@@ -1,110 +1,576 @@
-/* Custom warm earthy color palette inspired by hannahrosekirk.com */
+/* Minimalist Academic Website */
 
-:root {
-  /* Primary warm brown/orange palette */
-  --primary-50: #fef6f0;
-  --primary-100: #fde9dc;
-  --primary-200: #fbd0b8;
-  --primary-300: #f8af89;
-  --primary-400: #f48658;
-  --primary-500: #ef6632;
-  --primary-600: #d94e1f;
-  --primary-700: #b53d19;
-  --primary-800: #93341b;
-  --primary-900: #792e1a;
-  --primary-950: #41150c;
-
-  /* Neutral warm tones */
-  --neutral-50: #faf9f7;
-  --neutral-100: #f5f3ef;
-  --neutral-200: #e8e4dc;
-  --neutral-300: #d9d2c5;
-  --neutral-400: #c4b9a7;
-  --neutral-500: #b3a490;
-  --neutral-600: #9d8d79;
-  --neutral-700: #847765;
-  --neutral-800: #6d6356;
-  --neutral-900: #5a5249;
-  --neutral-950: #2f2b26;
+/* ===================
+   BASE TYPOGRAPHY
+   =================== */
+body {
+  font-feature-settings: "kern" 1, "liga" 1;
+  letter-spacing: -0.01em;
+  font-weight: 300;
 }
 
-/* Apply warm palette to light mode */
-html:not(.dark) {
-  --tw-prose-body: var(--neutral-900);
-  --tw-prose-headings: var(--neutral-950);
-  --tw-prose-links: var(--primary-600);
-  --tw-prose-bold: var(--neutral-900);
-  --tw-prose-counters: var(--neutral-600);
-  --tw-prose-bullets: var(--neutral-400);
-  --tw-prose-hr: var(--neutral-200);
-  --tw-prose-quotes: var(--neutral-900);
-  --tw-prose-quote-borders: var(--primary-300);
-  --tw-prose-captions: var(--neutral-600);
-  --tw-prose-code: var(--neutral-900);
-  --tw-prose-pre-code: var(--neutral-200);
-  --tw-prose-pre-bg: var(--neutral-900);
-
-  /* Background colors */
-  background-color: #fffaf5;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
 }
 
-/* Apply warm palette to dark mode */
-html.dark {
-  --tw-prose-body: var(--neutral-200);
-  --tw-prose-headings: var(--neutral-50);
-  --tw-prose-links: var(--primary-400);
-  --tw-prose-bold: var(--neutral-100);
-  --tw-prose-counters: var(--neutral-400);
-  --tw-prose-bullets: var(--neutral-600);
-  --tw-prose-hr: var(--neutral-800);
-  --tw-prose-quotes: var(--neutral-200);
-  --tw-prose-quote-borders: var(--primary-700);
-  --tw-prose-captions: var(--neutral-400);
-  --tw-prose-code: var(--neutral-200);
-  --tw-prose-pre-code: var(--neutral-300);
-  --tw-prose-pre-bg: var(--neutral-900);
-
-  /* Background colors */
-  background-color: #1a1512;
-}
-
-/* Link hover effects with warm tones */
 a {
-  transition: color 0.2s ease;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
 }
 
 a:hover {
-  color: var(--primary-500) !important;
+  opacity: 0.7;
 }
 
-/* Button styling with warm palette */
-.btn-primary {
-  background-color: var(--primary-600);
-  border-color: var(--primary-600);
+/* ===================
+   HOMEPAGE LAYOUT
+   =================== */
+
+/* Generous spacing */
+.resume-biography {
+  padding: 4rem 2rem 0 2rem !important;
+  margin-bottom: -2rem !important;
 }
 
-.btn-primary:hover {
-  background-color: var(--primary-700);
-  border-color: var(--primary-700);
+.resume-biography.py-8 {
+  padding: 4rem 2rem 0 2rem !important;
+  margin-bottom: -2rem !important;
 }
 
-/* Accent elements */
-.bg-primary-300 {
-  background-color: var(--primary-300) !important;
+/* Single column, centered layout */
+.resume-biography .max-w-7xl {
+  max-width: 700px !important;
+  margin: 0 auto !important;
 }
 
-.dark .bg-primary-700 {
-  background-color: var(--primary-800) !important;
+.resume-biography .grid {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 3rem !important;
 }
 
-/* Custom styles */
+/* Left column (photo, name, icons) - make it full width and centered */
+.resume-biography [class*="col-span-4"] {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  gap: 1rem !important;
+}
 
-/* Reduce font size for education and experience section summary text */
-.resume-biography-3 .prose p,
-[id*="experience"] .prose p,
-[id*="education"] .prose p,
-.hx-timeline .prose p,
-.hx-timeline-item .prose p {
-  font-size: 0.875rem !important; /* 14px */
+/* Right column - show bio and interests, hide education */
+.resume-biography [class*="col-span-8"] {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+/* Hide Education section */
+.resume-biography [class*="col-span-8"] > .mb-16 {
+  display: none !important;
+}
+
+/* Hide section headings with icons */
+.resume-biography .flex.items-center.gap-4.mb-8 {
+  display: none !important;
+}
+
+/* Bio text - smaller font */
+.resume-biography .bio-text {
+  text-align: center !important;
+  max-width: 500px !important;
+}
+
+.resume-biography .bio-text p {
+  font-size: 0.9rem !important;
+  font-weight: 300 !important;
+  color: #666 !important;
+  line-height: 1.6 !important;
+}
+
+html.dark .resume-biography .bio-text p {
+  color: #999 !important;
+}
+
+/* ===================
+   PROFILE PHOTO
+   =================== */
+.resume-biography .avatar-wrapper {
+  width: 200px !important;
+  height: 200px !important;
+  margin-bottom: 1rem !important;
+}
+
+.resume-biography .avatar-wrapper img.avatar {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+/* ===================
+   NAME & INFO BLOCK
+   =================== */
+.resume-biography .space-y-3 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+
+.resume-biography .space-y-3 > * {
+  margin: 0 !important;
+}
+
+/* Name - order 1 (first) */
+.resume-biography .space-y-3 > h1 {
+  font-size: 3.5rem !important;
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+  order: -10 !important;
+}
+
+/* Name & info container */
+.resume-biography .space-y-3 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+
+/* Organizations - vertical with smaller font */
+.resume-biography .space-y-3 > p.text-lg {
+  font-size: 1rem !important;
+  font-weight: 300 !important;
+  order: -5 !important;
+  margin: 0 !important;
+}
+
+/* Role/Question text - order 3 (after university) */
+.resume-biography .space-y-3 > .text-2xl {
+  font-size: 1rem !important;
+  font-weight: 300 !important;
   line-height: 1.5 !important;
+  max-width: 500px !important;
+  margin-top: 1rem !important;
+  order: 0 !important;
+}
+
+/* ===================
+   SOCIAL ICONS
+   =================== */
+.resume-biography .flex.flex-wrap.justify-center.gap-4 {
+  justify-content: center !important;
+  gap: 0.75rem !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.resume-biography .w-12.h-12 {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  background: transparent !important;
+  border: 1px solid #ddd !important;
+  box-shadow: none !important;
+}
+
+html.dark .resume-biography .w-12.h-12 {
+  border-color: #444 !important;
+}
+
+.resume-biography .w-12.h-12 svg {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+
+/* ===================
+   INTERESTS
+   =================== */
+.resume-biography .flex.flex-wrap.gap-3 {
+  justify-content: center !important;
+  gap: 0 !important;
+  margin-top: 1rem !important;
+  flex-wrap: nowrap !important;
+  flex-direction: row !important;
+  white-space: nowrap !important;
+}
+
+/* AI: on its own line */
+.resume-biography .flex.flex-wrap.gap-3 span:first-child {
+  flex-basis: 100% !important;
+  display: block !important;
+  text-align: center !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.resume-biography .flex.flex-wrap.gap-3 span:first-child::after {
+  content: "" !important;
+}
+
+/* Wrap container to allow AI: on top */
+.resume-biography .flex.flex-wrap.gap-3 {
+  flex-wrap: wrap !important;
+}
+
+.resume-biography .flex.flex-wrap.gap-3 span:not(:first-child) {
+  white-space: nowrap !important;
+}
+
+.resume-biography span.text-base {
+  font-size: 1rem !important;
+  font-weight: 300 !important;
+  padding: 0 0.35rem !important;
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  color: #666 !important;
+}
+
+html.dark .resume-biography span.text-base {
+  color: #999 !important;
+}
+
+.resume-biography .flex.flex-wrap.gap-3 span:not(:last-child)::after {
+  content: " · ";
+}
+
+/* ===================
+   NAVBAR
+   =================== */
+nav {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+nav ul,
+nav .navbar-menu,
+nav .flex,
+.navbar-end {
+  gap: 0.5rem !important;
+}
+
+nav a {
+  padding: 0.25rem 0.5rem !important;
+}
+
+/* Hide search button */
+.search-button,
+#search,
+[class*="search"],
+button[aria-label="Search"],
+.navbar-search {
+  display: none !important;
+}
+
+/* ===================
+   FOOTER
+   =================== */
+/* Hide Hugo Blox powered-by */
+footer a[data-hbx="poweredby_brand"],
+footer a[data-hbx="poweredby_cta"] {
+  display: none !important;
+}
+
+footer .text-sm {
+  display: none !important;
+}
+
+/* Hide footer entirely on content pages */
+article + footer,
+.prose ~ footer {
+  display: none !important;
+}
+
+/* Hide social icons, sidebar, and bottom nav on content pages */
+.article-container .social-icons,
+.article-container .page-footer,
+.article-container footer,
+.page-body footer,
+.page-body .social-icons,
+.prose + .social-icons,
+.author-card,
+.author__links,
+.sidebar__social,
+.sidebar__list,
+.sidebar__introduction,
+.sidebar,
+.sidebar__content,
+.wrapper__sidebar,
+.footer__sidebar,
+.flex.flex-wrap.justify-center.gap-4:not(.resume-biography *),
+article .flex.gap-4,
+.page-wrapper .social-icons,
+.experience,
+.accomplishments,
+[class*="experience"],
+[class*="accomplishment"],
+.reading-time,
+[class*="reading-time"],
+.post__footer-date,
+.article-metadata,
+.page-header .meta,
+.text-gray-500.text-sm.flex.items-center,
+div.text-sm.flex.items-center.flex-wrap,
+.btn,
+.btn-links,
+.page-footer,
+.article-style + div {
+  display: none !important;
+}
+
+/* Hide entire sidebar and TOC on content pages */
+.wrapper__sidebar,
+aside,
+.toc,
+.table-of-contents,
+#TableOfContents,
+[class*="toc"],
+.page-toc {
+  display: none !important;
+}
+
+/* Make main content centered */
+.wrapper__main {
+  max-width: 700px !important;
+  margin: 0 auto !important;
+  padding: 2rem !important;
+}
+
+.wrapper {
+  display: block !important;
+  justify-content: center !important;
+}
+
+/* Center content on research/content pages */
+.page-body,
+.page-body > .mx-auto,
+.hb-scrollbar + div,
+.mx-auto.flex.max-w-screen-xl {
+  max-width: 700px !important;
+  margin: 0 auto !important;
+  padding: 1rem !important;
+}
+
+.page-body .prose {
+  margin: 0 auto !important;
+}
+
+.page-body {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
+.mt-4.mb-16 {
+  margin-bottom: 1rem !important;
+}
+
+/* Hide share buttons and page navigation */
+.article-share,
+.article-widget,
+.share-buttons,
+.social-share,
+.sharer,
+.page-navigation,
+.pager,
+.nav-links,
+.post-nav,
+.article-nav,
+.prev-next {
+  display: none !important;
+}
+
+/* Hide share icons on research/content pages */
+section.flex.flex-row.flex-wrap.justify-center.pt-4,
+[id^="share-link"],
+a[id^="share-link"] {
+  display: none !important;
+}
+
+/* Hide prev/next navigation */
+div.pt-1.no-prose.w-full,
+.no-prose hr,
+.no-prose .flex.flex-col.md\:flex-row {
+  display: none !important;
+}
+
+/* Hide Hugo Blox HB button */
+.hb-attachment-link,
+[data-hb],
+.fixed.bottom-0,
+a[href*="hugoblox"],
+.hb-attachment,
+button[class*="hb-"],
+.fixed,
+[class*="fixed"][class*="bottom"],
+div[style*="fixed"],
+.z-50,
+.bottom-4,
+.right-4 {
+  display: none !important;
+}
+
+/* ===================
+   GENERAL ELEMENTS
+   =================== */
+hr {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 2rem 0;
+}
+
+html.dark hr {
+  border-top-color: #333;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+html.dark th,
+html.dark td {
+  border-bottom-color: #333;
+}
+
+/* Content pages */
+.prose {
+  max-width: 65ch;
+  font-size: 0.9rem !important;
+}
+
+.prose h1 {
+  font-size: 1.5rem !important;
+  font-weight: 400 !important;
+}
+
+.prose h2 {
+  font-size: 1.1rem !important;
+  font-weight: 400 !important;
+}
+
+.prose h3 {
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+}
+
+.prose p, .prose li {
+  font-weight: 300 !important;
+  line-height: 1.6 !important;
+}
+
+/* Minimalist cards for research page */
+.prose h3 {
+  background: #fafafa !important;
+  border: 1px solid #eee !important;
+  border-radius: 4px !important;
+  padding: 1rem 1.25rem 0.75rem !important;
+  margin-bottom: 0 !important;
+}
+
+.prose h3 + p {
+  background: #fafafa !important;
+  border: 1px solid #eee !important;
+  border-top: none !important;
+  border-radius: 0 0 4px 4px !important;
+  padding: 0.75rem 1.25rem 1rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 1.5rem !important;
+}
+
+html.dark .prose h3,
+html.dark .prose h3 + p {
+  background: #1a1a1a !important;
+  border-color: #333 !important;
+}
+
+/* Card hover effect */
+.prose h3:hover,
+.prose h3:hover + p {
+  border-color: #ccc !important;
+}
+
+html.dark .prose h3:hover,
+html.dark .prose h3:hover + p {
+  border-color: #555 !important;
+}
+
+/* Research intro - one seamless box */
+.prose > p:first-child,
+.prose > p:nth-child(2),
+.prose > p:nth-child(3) {
+  background: #fafafa !important;
+  padding: 0 1.25rem !important;
+  margin: 0 !important;
+  padding-bottom: 0.75rem !important;
+}
+
+.prose > p:first-child {
+  border: 1px solid #eee !important;
+  border-bottom: none !important;
+  border-radius: 6px 6px 0 0 !important;
+  padding-top: 1.25rem !important;
+}
+
+.prose > p:nth-child(2) {
+  border-left: 1px solid #eee !important;
+  border-right: 1px solid #eee !important;
+}
+
+.prose > p:nth-child(3) {
+  border: 1px solid #eee !important;
+  border-top: none !important;
+  border-radius: 0 0 6px 6px !important;
+  padding-bottom: 1.25rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+html.dark .prose > p:first-child,
+html.dark .prose > p:nth-child(2),
+html.dark .prose > p:nth-child(3) {
+  background: #1a1a1a !important;
+}
+
+html.dark .prose > p:first-child {
+  border-color: #333 !important;
+}
+
+html.dark .prose > p:nth-child(2) {
+  border-color: #333 !important;
+}
+
+html.dark .prose > p:nth-child(3) {
+  border-color: #333 !important;
+}
+
+.prose ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.prose ul li {
+  margin-bottom: 0.25rem;
+}
+
+/* Publication links */
+.pub-links a,
+.article-links a {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  margin-right: 0.3rem;
+  background: #f5f5f5;
+  border-radius: 3px;
+}
+
+html.dark .pub-links a,
+html.dark .article-links a {
+  background: #2a2a2a;
 }
