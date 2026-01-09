@@ -23,7 +23,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: 'How does relying on AI change the way we interact? I bridge cognitive science, social science, and human-AI interaction to design trustworthy AI that works for teams—not just individuals.'
+role: 'Current AI systems optimize for individual performance, but effectiveness depends on what happens after the interaction: the downstream decisions shaped by AI-generated content, the trust dynamics altered, the expertise gradually displaced. My research bridges AI, cognitive science, social science, and system design to ensure AI augments not just individual users, but the broader human networks they serve.'
 
 # Organizations/Affiliations to display in Biography blox
 organizations:

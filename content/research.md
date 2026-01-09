@@ -5,9 +5,9 @@ type: page
 
 PhD student at the [Center for Human-Inspired AI](https://www.chia.cam.ac.uk/) at the University of Cambridge, supervised by [Dr. Umang Bhatt](https://umangsbhatt.github.io) and [Prof. Anna Korhonen](https://sites.google.com/site/annakorhonen/).
 
-I research the **externalities of human-AI interaction**—the ripple effects that occur when AI-assisted work flows to colleagues, patients, or decision-makers who weren't present. Current AI systems optimize for individual performance, but organizational effectiveness depends on what happens *after* the interaction. An AI that boosts your productivity while fragmenting your team's shared understanding is a local optimizer with hidden costs.
+Current AI systems optimize for individual performance, but effectiveness depends on what happens *after* the interaction: the downstream decisions shaped by AI-generated content, the trust dynamics altered, the expertise gradually displaced.
 
-I build tools for empirical research on these externalities, designing trustworthy AI systems for teams and organizations—not just individual users.
+My research bridges AI, cognitive science, social science, and system design to ensure AI augments not just individual users, but the broader human networks they serve.
 
 ---
 
