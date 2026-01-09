@@ -2,6 +2,9 @@
 # Clean minimalist menu structure
 
 main:
+  - name: _me
+    url: /me/
+    weight: 1
   - name: _research
     url: /research/
     weight: 2

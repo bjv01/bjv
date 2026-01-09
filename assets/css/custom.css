@@ -503,31 +503,29 @@ html.dark .prose h3:hover + p {
   border-color: #555 !important;
 }
 
-/* Research intro - one seamless box */
+/* Intro box - seamless box for first paragraphs */
 .prose > p:first-child,
 .prose > p:nth-child(2),
-.prose > p:nth-child(3) {
+.prose > p:nth-child(3),
+.prose > p:nth-child(4) {
   background: #fafafa !important;
   padding: 0 1.25rem !important;
   margin: 0 !important;
   padding-bottom: 0.75rem !important;
-}
-
-.prose > p:first-child {
-  border: 1px solid #eee !important;
-  border-bottom: none !important;
-  border-radius: 6px 6px 0 0 !important;
-  padding-top: 1.25rem !important;
-}
-
-.prose > p:nth-child(2) {
   border-left: 1px solid #eee !important;
   border-right: 1px solid #eee !important;
 }
 
-.prose > p:nth-child(3) {
-  border: 1px solid #eee !important;
-  border-top: none !important;
+.prose > p:first-child {
+  border-top: 1px solid #eee !important;
+  border-radius: 6px 6px 0 0 !important;
+  padding-top: 1.25rem !important;
+}
+
+/* Last paragraph before hr gets bottom border */
+.prose > p:has(+ hr),
+.prose > p:last-of-type {
+  border-bottom: 1px solid #eee !important;
   border-radius: 0 0 6px 6px !important;
   padding-bottom: 1.25rem !important;
   margin-bottom: 1.5rem !important;
@@ -535,19 +533,9 @@ html.dark .prose h3:hover + p {
 
 html.dark .prose > p:first-child,
 html.dark .prose > p:nth-child(2),
-html.dark .prose > p:nth-child(3) {
+html.dark .prose > p:nth-child(3),
+html.dark .prose > p:nth-child(4) {
   background: #1a1a1a !important;
-}
-
-html.dark .prose > p:first-child {
-  border-color: #333 !important;
-}
-
-html.dark .prose > p:nth-child(2) {
-  border-color: #333 !important;
-}
-
-html.dark .prose > p:nth-child(3) {
   border-color: #333 !important;
 }
 
