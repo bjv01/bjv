@@ -4,13 +4,15 @@ This repository contains the source code for my personal academic website, hoste
 
 ## About
 
-This website showcases my academic profile, research, and professional experience as a PhD student in Human-Inspired AI at the University of Cambridge. The site features:
+I'm a PhD candidate at the Center for Human-Inspired Artificial Intelligence (CHIA), University of Cambridge. My research investigates the externalities of human-AI interaction—what happens when AI-assisted work flows to colleagues, patients, or decision-makers who weren't present.
 
-- Professional biography and research focus
-- Publications and academic work
-- Education and experience timeline
-- Skills, awards, and languages
-- Custom warm earthy color palette
+The site features a minimalist design with underscore-prefixed navigation:
+
+- **_me**: Extended biography and background
+- **_research**: Current projects and research focus
+- **_publications**: Links to Google Scholar profile
+- **_cv**: Downloadable CV
+- **_contact**: Direct email contact
 
 ## Technical Stack
 
@@ -25,12 +27,14 @@ This website showcases my academic profile, research, and professional experienc
 bjv/
 ├── assets/           # Custom CSS and other assets
 ├── content/          # Site content (markdown files)
-│   ├── _index.md    # Homepage
-│   ├── authors/     # Author profiles
-│   └── publications/ # Publications
+│   ├── _index.md     # Homepage (biography block)
+│   ├── me.md         # About page
+│   ├── research.md   # Research page
+│   ├── authors/      # Author profiles
+│   └── publications/ # Publication entries
 ├── config/          # Hugo configuration
 │   └── _default/    # Default configuration files
-├── static/          # Static files (images, etc.)
+├── static/          # Static files (images, CV)
 └── resources/       # Generated resources
 ```
 
@@ -78,22 +82,23 @@ The generated files will be in the `public/` directory.
 
 ## Customization
 
-### Color Palette
+### Design
 
-The site uses a custom warm earthy color palette defined in `assets/css/custom.css`. The primary color is set to orange in `config/_default/params.yaml`.
+The site uses a minimalist zinc color scheme with a clean, academic aesthetic. The logo displays as `_bjv` in the navbar.
 
 ### Content
 
-- **Homepage**: Edit `content/_index.md` to modify sections
-- **Biography**: Update `content/authors/admin/_index.md`
-- **Publications**: Add new publications in `content/publications/`
-- **Menu**: Modify navigation in `config/_default/menus.yaml`
+- **Homepage**: Edit `content/_index.md` (biography block configuration)
+- **About page**: Edit `content/me.md`
+- **Research page**: Edit `content/research.md`
+- **Profile data**: Update `content/authors/admin/_index.md` (education, work, skills, awards)
+- **Navigation**: Modify `config/_default/menus.yaml`
 
 ### Site Configuration
 
 Main configuration files:
 - `config/_default/hugo.yaml` - General Hugo settings
-- `config/_default/params.yaml` - Theme parameters and SEO
+- `config/_default/params.yaml` - Theme parameters, SEO, and navbar logo
 - `config/_default/menus.yaml` - Navigation menu
 
 ## Deployment
