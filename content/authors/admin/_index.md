@@ -23,7 +23,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: 'I study what happens *after* human-AI interaction: when AI-assisted work flows to colleagues, patients, and decision-makers who weren''t present. I bridge AI, cognitive science, and social science to ensure AI augments not just individual users, but the broader human networks they serve.'
+role: 'I examine how AI assistance creates ripple effects beyond individual users. My research investigates the interpersonal and institutional consequences when AI-assisted outputs flow to colleagues, patients, and decision-makers—identifying intervention points for safer, more beneficial AI deployment. I bridge cognitive science, social science, and AI research to build systems that augment entire human networks, not just individual capabilities.'
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
